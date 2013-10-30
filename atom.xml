@@ -4,7 +4,7 @@
   <title><![CDATA[Arnoud's Blog]]></title>
   <link href="http://arnoudj.github.io/atom.xml" rel="self"/>
   <link href="http://arnoudj.github.io/"/>
-  <updated>2013-10-30T02:19:58+01:00</updated>
+  <updated>2013-10-30T02:23:32+01:00</updated>
   <id>http://arnoudj.github.io/</id>
   <author>
     <name><![CDATA[Arnoud de Jonge]]></name>
@@ -39,6 +39,8 @@ it the FrankenStat.</p>
 <li>Be able to place it anywhere in my living room and control the CV wireless.</li>
 </ul>
 
+
+<p>The FrankenStat code is on <a href="https://github.com/arnoudj/FrankenStat">GitHub</a>.</p>
 ]]></content>
   </entry>
   
