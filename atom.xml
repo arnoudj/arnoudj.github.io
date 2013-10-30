@@ -4,7 +4,7 @@
   <title><![CDATA[Arnoud's Blog]]></title>
   <link href="http://arnoudj.github.io/atom.xml" rel="self"/>
   <link href="http://arnoudj.github.io/"/>
-  <updated>2013-10-30T01:38:20+01:00</updated>
+  <updated>2013-10-30T02:00:50+01:00</updated>
   <id>http://arnoudj.github.io/</id>
   <author>
     <name><![CDATA[Arnoud de Jonge]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[FrankenStat]]></title>
+    <link href="http://arnoudj.github.io/blog/2013/10/30/frankenstat/"/>
+    <updated>2013-10-30T01:41:00+01:00</updated>
+    <id>http://arnoudj.github.io/blog/2013/10/30/frankenstat</id>
+    <content type="html"><![CDATA[<p><img src="http://arnoudj.github.io/assets/FrankenStat_BIT.png" alt="BIT" /></p>
+
+<p>I&rsquo;ve been trying to make my own thermostat for years. A few month back
+I stumbled across the Arduino platform and after a bit of playing
+around with it, this looked to be the platform on which I could make
+this work. Because the first prototype was a bunch of wires, I named
+it the FrankenStat.</p>
+
+<!-- more -->
+
+
+<p>What I want from my thermostat is:</p>
+
+<ul>
+<li>Having a REST API to control the thermostat and get statistics (I love graphs!)</li>
+<li>Being able to control the thermostat manually with buttons.</li>
+<li>It should be programmable (have multiple temperature settings per day.)</li>
+<li>I should be able to adjust the temperature temperarily until the next programmed temperature setting.</li>
+<li>Be able to place it anywhere in my living room and control the CV wireless.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New blog!]]></title>
