@@ -4,7 +4,7 @@
   <title><![CDATA[Arnoud's Blog]]></title>
   <link href="http://arnoudj.github.io/atom.xml" rel="self"/>
   <link href="http://arnoudj.github.io/"/>
-  <updated>2013-10-30T01:29:35+01:00</updated>
+  <updated>2013-10-30T01:37:22+01:00</updated>
   <id>http://arnoudj.github.io/</id>
   <author>
     <name><![CDATA[Arnoud de Jonge]]></name>
@@ -12,5 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New blog!]]></title>
+    <link href="http://arnoudj.github.io/blog/2013/10/30/new-blog-slash/"/>
+    <updated>2013-10-30T01:30:00+01:00</updated>
+    <id>http://arnoudj.github.io/blog/2013/10/30/new-blog-slash</id>
+    <content type="html"><![CDATA[<h1>New Blog</h1>
+
+<p>Yes, starting a blog again. This will be mostly about home brewing, coding,
+sysadmin stuff, and Arduino projects.</p>
+]]></content>
+  </entry>
   
 </feed>
