@@ -4,7 +4,7 @@
   <title><![CDATA[Arnoud's Blog]]></title>
   <link href="http://arnoudj.github.io/atom.xml" rel="self"/>
   <link href="http://arnoudj.github.io/"/>
-  <updated>2013-10-30T02:40:27+01:00</updated>
+  <updated>2013-10-30T13:14:18+01:00</updated>
   <id>http://arnoudj.github.io/</id>
   <author>
     <name><![CDATA[Arnoud de Jonge]]></name>
@@ -24,16 +24,16 @@
 commercial ones lacked options wanted or, if they had the options, where
 terribly expensive. A few month back I stumbled across the Arduino platform
 and after a bit of playing around with it, this looked to be the platform
-on which I could make this work. And so FrankenStat came to be.</p>
+on which I could make this work. And so FrankenStat came to live.</p>
 
 <!-- more -->
 
 
-<p>What I want from my thermostat is:</p>
+<p>What I want from a thermostat is:</p>
 
 <ul>
-<li>Having a REST API to control the thermostat and get statistics (I love graphs!)</li>
-<li>Being able to control the thermostat manually with buttons.</li>
+<li>Having a REST API to control the thermostat from anywhere and get statistics (I love graphs!)</li>
+<li>Being able to control the thermostat manually with buttons on the device.</li>
 <li>It should be programmable (have multiple temperature settings per day.)</li>
 <li>I should be able to adjust the temperature temperarily until the next programmed temperature setting.</li>
 <li>Be able to place it anywhere in my living room and control the CV wireless.</li>
