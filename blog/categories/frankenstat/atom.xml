@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Arnoud's Blog]]></title>
-  <link href="http://arnoudj.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: FrankenStat | Arnoud's Blog]]></title>
+  <link href="http://arnoudj.github.io/blog/categories/frankenstat/atom.xml" rel="self"/>
   <link href="http://arnoudj.github.io/"/>
   <updated>2013-10-31T21:06:49+01:00</updated>
   <id>http://arnoudj.github.io/</id>
@@ -18,7 +18,7 @@
     <link href="http://arnoudj.github.io/blog/2013/10/30/frankenstat/"/>
     <updated>2013-10-30T01:41:00+01:00</updated>
     <id>http://arnoudj.github.io/blog/2013/10/30/frankenstat</id>
-    <content type="html"><![CDATA[<p><img src="http://arnoudj.github.io/assets/FrankenStat_BIT.png" alt="BIT" /></p>
+    <content type="html"><![CDATA[<p><img src="/assets/FrankenStat_BIT.png" alt="BIT" /></p>
 
 <p>I&rsquo;ve had the idea of making my own thermostat for years as most of the
 commercial ones lacked options wanted or, if they had the options, where
@@ -41,16 +41,6 @@ on which I could make this work. And so FrankenStat came to live.</p>
 
 
 <p>The FrankenStat code is on <a href="https://github.com/arnoudj/FrankenStat">GitHub</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[New blog!]]></title>
-    <link href="http://arnoudj.github.io/blog/2013/10/30/new-blog-slash/"/>
-    <updated>2013-10-30T01:30:00+01:00</updated>
-    <id>http://arnoudj.github.io/blog/2013/10/30/new-blog-slash</id>
-    <content type="html"><![CDATA[<p>Yes, starting a blog again. This will be mostly about home brewing, coding,
-sysadmin stuff, and Arduino projects.</p>
 ]]></content>
   </entry>
   
