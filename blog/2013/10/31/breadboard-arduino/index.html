@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>FrankenStat - Arnoud's Blog</title>
+  <title>Breadboard Arduino - Arnoud's Blog</title>
   <meta name="author" content="Arnoud de Jonge">
 
   
-  <meta name="description" content="I&rsquo;ve had the idea of making my own thermostat for years as most of the
-commercial ones lacked options wanted or, if they had the options, &hellip;">
+  <meta name="description" content="After testing the thermostat on the Arduino Uno I&rsquo;m considering a more
+production worthy design not using an &lsquo;expensive&rsquo; Arduino &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ commercial ones lacked options wanted or, if they had the options, &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://arnoudj.github.io/blog/2013/10/30/frankenstat">
+  <link rel="canonical" href="http://arnoudj.github.io/blog/2013/10/31/breadboard-arduino">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Arnoud's Blog" type="application/atom+xml">
@@ -69,7 +69,7 @@ commercial ones lacked options wanted or, if they had the options, &hellip;">
   
   <header>
     
-      <h1 class="entry-title">FrankenStat</h1>
+      <h1 class="entry-title">Breadboard Arduino</h1>
     
     
       <p class="meta">
@@ -85,36 +85,31 @@ commercial ones lacked options wanted or, if they had the options, &hellip;">
   
 
 
-<time datetime="2013-10-30T01:41:00+01:00" pubdate data-updated="true">30-10-2013</time>
+<time datetime="2013-10-31T21:12:00+01:00" pubdate data-updated="true">31-10-2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p><img src="/assets/FrankenStat_BIT.png" alt="BIT" /></p>
-
-<p>I&rsquo;ve had the idea of making my own thermostat for years as most of the
-commercial ones lacked options wanted or, if they had the options, where
-terribly expensive. A few month back I stumbled across the Arduino platform
-and after a bit of playing around with it, this looked to be the platform
-on which I could make this work. And so FrankenStat came to live.</p>
+<div class="entry-content"><p>After testing the thermostat on the Arduino Uno I&rsquo;m considering a more
+production worthy design not using an &lsquo;expensive&rsquo; Arduino but components
+on a prototype board or PCB.</p>
 
 <!-- more -->
 
 
-<p>What I want from a thermostat is:</p>
+<p>First I will test all the components on a breadbord before I finanalize
+it on a prototype board. Much of this I took from the
+<a href="http://arduino.cc/en/Main/Standalone">Arduino website</a> and
+<a href="http://www.jameco.com/Jameco/workshop/JamecoBuilds/arduinocircuit.html">this</a>
+post on the Jameco Electronics website.</p>
 
-<ul>
-<li>Having a REST API to control the thermostat from anywhere and get statistics (I love graphs!)</li>
-<li>Being able to control the thermostat manually with buttons on the device.</li>
-<li>It should be programmable (have multiple temperature settings per day.)</li>
-<li>I should be able to adjust the temperature temperarily until the next programmed temperature setting.</li>
-<li>Be able to place it anywhere in my living room and control the CV wireless.</li>
-</ul>
+<h2>Power Regulator</h2>
 
-
-<p>The FrankenStat code is on <a href="https://github.com/arnoudj/FrankenStat">GitHub</a>.</p>
+<p>To prevent the voltage drops I saw earlier, when using the Arduino Uno,
+I will be powering the circuit using a 9V power supply and lower that to 5V
+with a 7805 voltage regulator.</p>
 </div>
 
 
@@ -137,12 +132,12 @@ on which I could make this work. And so FrankenStat came to live.</p>
   
 
 
-<time datetime="2013-10-30T01:41:00+01:00" pubdate data-updated="true">30-10-2013</time>
+<time datetime="2013-10-31T21:12:00+01:00" pubdate data-updated="true">31-10-2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/frankenstat/'>FrankenStat</a>, <a class='category' href='/blog/categories/arduino/'>arduino</a>
+    <a class='category' href='/blog/categories/arduino/'>arduino</a>
   
 </span>
 
@@ -151,7 +146,7 @@ on which I could make this work. And so FrankenStat came to live.</p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://arnoudj.github.io/blog/2013/10/30/frankenstat/" data-via="@noudsch" data-counturl="http://arnoudj.github.io/blog/2013/10/30/frankenstat/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://arnoudj.github.io/blog/2013/10/31/breadboard-arduino/" data-via="@noudsch" data-counturl="http://arnoudj.github.io/blog/2013/10/31/breadboard-arduino/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -164,10 +159,10 @@ on which I could make this work. And so FrankenStat came to live.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/10/30/new-blog-slash/" title="Previous Post: New blog!">&laquo; New blog!</a>
+        <a class="basic-alignment left" href="/blog/2013/10/30/frankenstat/" title="Previous Post: FrankenStat">&laquo; FrankenStat</a>
       
       
-        <a class="basic-alignment right" href="/blog/2013/10/31/breadboard-arduino/" title="Next Post: Breadboard Arduino">Breadboard Arduino &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2014/02/05/fosdem-and-cfgmgmtdays/" title="Next Post: FOSDEM and cfgmgmtdays">FOSDEM and cfgmgmtdays &raquo;</a>
       
     </p>
   </footer>

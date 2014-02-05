@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>FOSDEM and cfgmgmtdays - Arnoud's Blog</title>
+  <meta name="author" content="Arnoud de Jonge">
+
+  
+  <meta name="description" content="I went to FOSDEM and cfgmgmnt Camp on sunday, monday and tuesday. Here is a ‘short’ summary of some things of interest I saw. FOSDEM Went to some &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://arnoudj.github.io/blog/2014/02/05/fosdem-and-cfgmgmtdays">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Arnoud's Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Arnoud's Blog</a></h1>
+  
+    <h2>Brewing Beer and Code</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:arnoudj.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">FOSDEM and Cfgmgmtdays</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-05T13:17:00+01:00" pubdate data-updated="true">05-02-2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I went to FOSDEM and cfgmgmnt Camp on sunday, monday and tuesday. Here is a ‘short’ summary of some things of interest I saw.</p>
+
+<!-- more -->
+
+
+<h1>FOSDEM</h1>
+
+<p>Went to some talks about virtualisation oVirt, CloudStack and OpenStack.</p>
+
+<p>OpenDaylight with oVirt. OpenDaylight is a software defined network layer, much like Neutron in OpenStack. (OpenDaylight can be used in OpenStack to replace Neutron, but that was not part of this talk).</p>
+
+<h2>libCloud</h2>
+
+<p>Python library for interacting with multiple cloud providers via a unified API.</p>
+
+<h2>DeltaCloud</h2>
+
+<p>Same a libCloud, but in Ruby (yay!)</p>
+
+<h2>knife cs</h2>
+
+<p>Knife plugin to manage your CloudStack servers with chef. Same thing also available for OpenStack as ‘knife openstack’</p>
+
+<h1>Cfgmgmt Camp</h1>
+
+<p>This is a new conference that started last year as Puppet Camp, but this year includes all the major Configuration Management systems. This will be a yearly event organised the days following FOSDEM. Some of the talks I went to are:</p>
+
+<h2>Building a CI Pipeline with Chef</h2>
+
+<p>Use Feature Toggling in stead of branches and merges. With Feature Toggling you add all your changes to the master. New (untested) features are not enabled by default but can be toggled on when needed. This enabled you to get quick feedback about your code.
+Use Jenkins to automatically test your code.
+Useful Jenkins plugins:
+&ndash; Build Flow
+&ndash; Build Graph View
+Cucumber for end2end testing.
+Gather info from tests in Logstash so you can see later on why a test failed.
+Add monitoring in your test environment, Nagios / Sensu to catch problems early on.
+Jenkins can run jobs in parallel. Use this as much as possible to shorten the test cycle.</p>
+
+<h2>MCollective and Chef</h2>
+
+<p>MCollective is a tool written for Puppet, but it’s very customisable and will also work with Chef. MCollective is an orchestration tool which can be a better alternative to an ssh in a for loop. MCollective can read facts from Ohai, and filter on that. For instance:</p>
+
+<p><code>mco find --with-class role.webserver --with-class /apache/</code></p>
+
+<p>Will give you a list of all servers which have the apache class. With added flags you can also run commands on all these servers. For instance you can stop or start apache or run Chef to update a configuration setting.</p>
+
+<p>See: <a href="http://docs.puppetlabs.com/mcollective/reference/integration/chef.html">http://docs.puppetlabs.com/mcollective/reference/integration/chef.html</a></p>
+
+<h2>Docker</h2>
+
+<p>Docker is an LXC-based container service to create portable and self-sufficient containers of an application which can be used to build a PAAS. Note: Docker is also available now as a hypervisor in OpenStack.</p>
+
+<p>Boot2docker is a Tiny Core Linux distribution to run Docker containers on your OS X or Linux workstation. Can be used to develop and test a container before pushing to production.</p>
+
+<p>In (a/the) next version of Docker autoscaling will be added. So you can fire off more docker instances automatically when needed.</p>
+
+<h2>Testing Configuration Management</h2>
+
+<p>A talk about testing configuration management with Chef.</p>
+
+<ul>
+<li><p>Test Kitchen
+Tests your Chef recipes on a VM (OpenStack, Vagrant, LXC, etc.) This can run the tests for various versions of Chef and on various distributions. It supports many testing frameworks like Serverspec, Bats and Rspec.
+See: <a href="http://kitchen.ci/">http://kitchen.ci/</a></p></li>
+<li><p>Serverspec
+With ServerSpec you can write tests to see if a server is configured correctly. When you combine this with Test Kitchen you can add checks that run after the test servers is deployed with Chef. for instance check if all the required packages are installed, if a process is listening on port 80 or if a certain line is present in a configuration file.</p></li>
+<li><p>Bats (Bash Automated Testing System
+Testing framework in Bash.
+See: <a href="https://github.com/sstephenson/bats">https://github.com/sstephenson/bats</a></p></li>
+<li><p>RuboCop
+A Ruby code analyzer. Checks for coding style.</p></li>
+<li><p>Foodcritic
+Checks for coding style in Chef Recipes.
+See: <a href="http://acrmp.github.io/foodcritic/">http://acrmp.github.io/foodcritic/</a></p></li>
+<li><p>chefspec
+ChefSpec is an Rspec unit testing framework for testing Chef cookbooks.
+See: <a href="https://github.com/sethvargo/chefspec">https://github.com/sethvargo/chefspec</a>
+An example of a Chef cookbook with most of the tests added is: <a href="https://github.com/opscode-cookbooks/yum">https://github.com/opscode-cookbooks/yum</a></p></li>
+</ul>
+
+
+<p>Next event: <a href="http://loadays.org">http://loadays.org</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Arnoud de Jonge</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-05T13:17:00+01:00" pubdate data-updated="true">05-02-2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/chef/'>Chef</a>, <a class='category' href='/blog/categories/openstack/'>OpenStack</a>, <a class='category' href='/blog/categories/puppet/'>Puppet</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://arnoudj.github.io/blog/2014/02/05/fosdem-and-cfgmgmtdays/" data-via="@noudsch" data-counturl="http://arnoudj.github.io/blog/2014/02/05/fosdem-and-cfgmgmtdays/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/10/31/breadboard-arduino/" title="Previous Post: Breadboard Arduino">&laquo; Breadboard Arduino</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/02/05/fosdem-and-cfgmgmtdays/">FOSDEM and Cfgmgmtdays</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/31/breadboard-arduino/">Breadboard Arduino</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/30/frankenstat/">FrankenStat</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/30/new-blog-slash/">New Blog!</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/arnoudj">@arnoudj</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'arnoudj',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/arnoud.de.jonge@gmail.com?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Arnoud de Jonge -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

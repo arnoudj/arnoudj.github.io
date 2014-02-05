@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Arnoud's Blog]]></title>
-  <link href="http://arnoudj.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: OpenStack | Arnoud's Blog]]></title>
+  <link href="http://arnoudj.github.io/blog/categories/openstack/atom.xml" rel="self"/>
   <link href="http://arnoudj.github.io/"/>
   <updated>2014-02-05T13:43:36+01:00</updated>
   <id>http://arnoudj.github.io/</id>
@@ -101,73 +101,6 @@ An example of a Chef cookbook with most of the tests added is: <a href="https://
 
 
 <p>Next event: <a href="http://loadays.org">http://loadays.org</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Breadboard Arduino]]></title>
-    <link href="http://arnoudj.github.io/blog/2013/10/31/breadboard-arduino/"/>
-    <updated>2013-10-31T21:12:00+01:00</updated>
-    <id>http://arnoudj.github.io/blog/2013/10/31/breadboard-arduino</id>
-    <content type="html"><![CDATA[<p>After testing the thermostat on the Arduino Uno I&rsquo;m considering a more
-production worthy design not using an &lsquo;expensive&rsquo; Arduino but components
-on a prototype board or PCB.</p>
-
-<!-- more -->
-
-
-<p>First I will test all the components on a breadbord before I finanalize
-it on a prototype board. Much of this I took from the
-<a href="http://arduino.cc/en/Main/Standalone">Arduino website</a> and
-<a href="http://www.jameco.com/Jameco/workshop/JamecoBuilds/arduinocircuit.html">this</a>
-post on the Jameco Electronics website.</p>
-
-<h2>Power Regulator</h2>
-
-<p>To prevent the voltage drops I saw earlier, when using the Arduino Uno,
-I will be powering the circuit using a 9V power supply and lower that to 5V
-with a 7805 voltage regulator.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[FrankenStat]]></title>
-    <link href="http://arnoudj.github.io/blog/2013/10/30/frankenstat/"/>
-    <updated>2013-10-30T01:41:00+01:00</updated>
-    <id>http://arnoudj.github.io/blog/2013/10/30/frankenstat</id>
-    <content type="html"><![CDATA[<p><img src="http://arnoudj.github.io/assets/FrankenStat_BIT.png" alt="BIT" /></p>
-
-<p>I&rsquo;ve had the idea of making my own thermostat for years as most of the
-commercial ones lacked options wanted or, if they had the options, where
-terribly expensive. A few month back I stumbled across the Arduino platform
-and after a bit of playing around with it, this looked to be the platform
-on which I could make this work. And so FrankenStat came to live.</p>
-
-<!-- more -->
-
-
-<p>What I want from a thermostat is:</p>
-
-<ul>
-<li>Having a REST API to control the thermostat from anywhere and get statistics (I love graphs!)</li>
-<li>Being able to control the thermostat manually with buttons on the device.</li>
-<li>It should be programmable (have multiple temperature settings per day.)</li>
-<li>I should be able to adjust the temperature temperarily until the next programmed temperature setting.</li>
-<li>Be able to place it anywhere in my living room and control the CV wireless.</li>
-</ul>
-
-
-<p>The FrankenStat code is on <a href="https://github.com/arnoudj/FrankenStat">GitHub</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[New blog!]]></title>
-    <link href="http://arnoudj.github.io/blog/2013/10/30/new-blog-slash/"/>
-    <updated>2013-10-30T01:30:00+01:00</updated>
-    <id>http://arnoudj.github.io/blog/2013/10/30/new-blog-slash</id>
-    <content type="html"><![CDATA[<p>Yes, starting a blog again. This will be mostly about home brewing, coding,
-sysadmin stuff, and Arduino projects.</p>
 ]]></content>
   </entry>
   
