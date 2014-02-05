@@ -4,7 +4,7 @@
   <title><![CDATA[Category: arduino | Arnoud's Blog]]></title>
   <link href="http://arnoudj.github.io/blog/categories/arduino/atom.xml" rel="self"/>
   <link href="http://arnoudj.github.io/"/>
-  <updated>2014-02-05T13:43:36+01:00</updated>
+  <updated>2014-02-05T13:50:25+01:00</updated>
   <id>http://arnoudj.github.io/</id>
   <author>
     <name><![CDATA[Arnoud de Jonge]]></name>
@@ -12,32 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Breadboard Arduino]]></title>
-    <link href="http://arnoudj.github.io/blog/2013/10/31/breadboard-arduino/"/>
-    <updated>2013-10-31T21:12:00+01:00</updated>
-    <id>http://arnoudj.github.io/blog/2013/10/31/breadboard-arduino</id>
-    <content type="html"><![CDATA[<p>After testing the thermostat on the Arduino Uno I&rsquo;m considering a more
-production worthy design not using an &lsquo;expensive&rsquo; Arduino but components
-on a prototype board or PCB.</p>
-
-<!-- more -->
-
-
-<p>First I will test all the components on a breadbord before I finanalize
-it on a prototype board. Much of this I took from the
-<a href="http://arduino.cc/en/Main/Standalone">Arduino website</a> and
-<a href="http://www.jameco.com/Jameco/workshop/JamecoBuilds/arduinocircuit.html">this</a>
-post on the Jameco Electronics website.</p>
-
-<h2>Power Regulator</h2>
-
-<p>To prevent the voltage drops I saw earlier, when using the Arduino Uno,
-I will be powering the circuit using a 9V power supply and lower that to 5V
-with a 7805 voltage regulator.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[FrankenStat]]></title>

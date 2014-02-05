@@ -4,7 +4,7 @@
   <title><![CDATA[Arnoud's Blog]]></title>
   <link href="http://arnoudj.github.io/atom.xml" rel="self"/>
   <link href="http://arnoudj.github.io/"/>
-  <updated>2014-02-05T13:43:36+01:00</updated>
+  <updated>2014-02-05T13:50:25+01:00</updated>
   <id>http://arnoudj.github.io/</id>
   <author>
     <name><![CDATA[Arnoud de Jonge]]></name>
@@ -80,53 +80,29 @@ Jenkins can run jobs in parallel. Use this as much as possible to shorten the te
 <p>A talk about testing configuration management with Chef.</p>
 
 <ul>
-<li><p>Test Kitchen
+<li><p><em>Test Kitchen</em>
 Tests your Chef recipes on a VM (OpenStack, Vagrant, LXC, etc.) This can run the tests for various versions of Chef and on various distributions. It supports many testing frameworks like Serverspec, Bats and Rspec.
 See: <a href="http://kitchen.ci/">http://kitchen.ci/</a></p></li>
-<li><p>Serverspec
+<li><p><em>Serverspec</em>
 With ServerSpec you can write tests to see if a server is configured correctly. When you combine this with Test Kitchen you can add checks that run after the test servers is deployed with Chef. for instance check if all the required packages are installed, if a process is listening on port 80 or if a certain line is present in a configuration file.</p></li>
-<li><p>Bats (Bash Automated Testing System
+<li><p><em>Bats (Bash Automated Testing System)</em>
 Testing framework in Bash.
 See: <a href="https://github.com/sstephenson/bats">https://github.com/sstephenson/bats</a></p></li>
-<li><p>RuboCop
+<li><p><em>RuboCop</em>
 A Ruby code analyzer. Checks for coding style.</p></li>
-<li><p>Foodcritic
+<li><p><em>Foodcritic</em>
 Checks for coding style in Chef Recipes.
 See: <a href="http://acrmp.github.io/foodcritic/">http://acrmp.github.io/foodcritic/</a></p></li>
-<li><p>chefspec
-ChefSpec is an Rspec unit testing framework for testing Chef cookbooks.
-See: <a href="https://github.com/sethvargo/chefspec">https://github.com/sethvargo/chefspec</a>
-An example of a Chef cookbook with most of the tests added is: <a href="https://github.com/opscode-cookbooks/yum">https://github.com/opscode-cookbooks/yum</a></p></li>
+<li><p><em>chefspec</em>
+ChefSpec is an Rspec unit testing framework for testing Chef cookbooks.</p></li>
 </ul>
 
 
+<p>See: <a href="https://github.com/sethvargo/chefspec">https://github.com/sethvargo/chefspec</a></p>
+
+<p>An example of a Chef cookbook with most of the tests added is: <a href="https://github.com/opscode-cookbooks/yum">https://github.com/opscode-cookbooks/yum</a></p>
+
 <p>Next event: <a href="http://loadays.org">http://loadays.org</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Breadboard Arduino]]></title>
-    <link href="http://arnoudj.github.io/blog/2013/10/31/breadboard-arduino/"/>
-    <updated>2013-10-31T21:12:00+01:00</updated>
-    <id>http://arnoudj.github.io/blog/2013/10/31/breadboard-arduino</id>
-    <content type="html"><![CDATA[<p>After testing the thermostat on the Arduino Uno I&rsquo;m considering a more
-production worthy design not using an &lsquo;expensive&rsquo; Arduino but components
-on a prototype board or PCB.</p>
-
-<!-- more -->
-
-
-<p>First I will test all the components on a breadbord before I finanalize
-it on a prototype board. Much of this I took from the
-<a href="http://arduino.cc/en/Main/Standalone">Arduino website</a> and
-<a href="http://www.jameco.com/Jameco/workshop/JamecoBuilds/arduinocircuit.html">this</a>
-post on the Jameco Electronics website.</p>
-
-<h2>Power Regulator</h2>
-
-<p>To prevent the voltage drops I saw earlier, when using the Arduino Uno,
-I will be powering the circuit using a 9V power supply and lower that to 5V
-with a 7805 voltage regulator.</p>
 ]]></content>
   </entry>
   
